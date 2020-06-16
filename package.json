@@ -1,6 +1,6 @@
 {
   "name": "meta1dex",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "Package for work with Meta1 DEX",
   "main": "index.js",
   "bin": {
