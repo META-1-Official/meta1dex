@@ -1,6 +1,6 @@
 {
   "name": "meta1dex",
-  "version": "0.6.8",
+  "version": "0.6.10",
   "description": "Package for work with Meta1 DEX",
   "main": "index.js",
   "bin": {
@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "bignumber.js": "^7.2.1",
-    "meta1js": "3.2.0-rc1",
+    "meta1js": "3.2.2-rc1",
     "lzma": "^2.3.2"
   },
   "devDependencies": {
