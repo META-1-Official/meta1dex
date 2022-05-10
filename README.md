@@ -1,4 +1,4 @@
-# meta1dex
+# meta1-vision-dex
 
 Package for work with Meta1 DEX.
 The main class in the package is `Meta1`. All you need is in it. There are a couple more helper classes, but they are not really designed for use outside of the `Meta1` class.
@@ -10,11 +10,11 @@ The `Meta1` class consists of static methods intended for working with the Meta1
 ### If you use `npm`
 This library can be obtained through npm:
 ```
-$ npm install meta1dex
+$ npm install meta1-vision-dex
 ```
 If you want use [REPL-mode](#repl-mode):
 ```
-$ npm install -g meta1dex
+$ npm install -g meta1-vision-dex
 ```
 
 ### If you use `browser`
@@ -28,7 +28,7 @@ After that in console available `Meta1` class.
 
 __meta1dex__ package contain class `Meta1`: 
 ```js
-const Meta1 = require('meta1dex')
+const Meta1 = require('meta1-vision-dex')
 ```
 To connect to the Meta1 network, you must call `connect` method:
 ```js
@@ -163,7 +163,7 @@ The account has a lot more operations available than an instance of the Meta1 cl
 
 For example:
 ```js
-let Meta1 = require("meta1dex")
+let Meta1 = require("meta1-vision-dex")
 
 Meta1.subscribe("connected", start)
 
@@ -217,7 +217,7 @@ At the moment, __META1DEX__ has three types of events:
 
 For example:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('connected', startAfterConnected);
 Meta1.subscribe('block', callEachBlock);
@@ -242,7 +242,7 @@ Another feature of the event is that when you first subscription call the method
 Now it's not necessary to explicitly call `Meta1.connect()`, it's enough to subscribe to the `connected` event.
 
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('connected', start);
 
@@ -256,7 +256,7 @@ async function start() {
 The `block` event is triggered when a new block is created in the blockchain. The first event subscription automatically creates a subscription to the `connected` event, and if this is the first subscription, it will cause a connection to the blockchain.
 
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('block', newBlock);
 
@@ -280,7 +280,7 @@ The first subscriber to `account` will call a `block` subscription, which in the
 
 Example code:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('account', changeAccount, 'mindfulme');
 

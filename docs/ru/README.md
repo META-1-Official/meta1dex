@@ -10,11 +10,11 @@
 ### Если вы используете `npm`
 Установка пакета через npm:
 ```
-$ npm install meta1dex
+$ npm install meta1-vision-dex
 ```
 Если хотите использовать [REPL-режим](#repl-режим):
 ```
-$ npm install -g meta1dex
+$ npm install -g meta1-vision-dex
 ```
 
 ### Если хотите использовать в `браузере`
@@ -28,7 +28,7 @@ $ npm install -g meta1dex
 
 __meta1dex__ пакет содержит класс `Meta1`: 
 ```js
-const Meta1 = require('meta1dex')
+const Meta1 = require('meta1-vision-dex')
 ```
 Для подключения к Meta1 сети, необходимо вызвать метод `connect`:
 ```js
@@ -117,7 +117,7 @@ await acc.assetReserve("ABC", 12)
 Если необходимо перевести токены с текстом, необходимо указать `закрытый memo-ключ`  (только если использовали `new Meta1()`):
 ```js
 bot.setMemoKey(<privateMemoKey>)
-await bot.transfer("scientistnik", "USD", 10, "Thank you for meta1dex!")
+await bot.transfer("scientistnik", "USD", 10, "Thank you for meta1-vision-dex!")
 ```
 ### Конструктор транзакций
 
@@ -162,7 +162,7 @@ await acc.broadcast(tx)
 
 Пример создания нового аккаунта:
 ```js
-let Meta1 = require("meta1dex")
+let Meta1 = require("meta1-vision-dex")
 
 Meta1.subscribe("connected", start)
 
@@ -217,7 +217,7 @@ async function start() {
 
 Для примера:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('connected', startAfterConnected);
 Meta1.subscribe('block', callEachBlock);
@@ -240,7 +240,7 @@ Meta1.subscribe('connected', secondFunction);
 Другая особенность этого события заключается в том, что после первой подписки произойдет автоматический вызов `Meta1.connect()`. Если подключение уже установлено, повторного вызова не будет.
 
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('connected', start);
 
@@ -254,7 +254,7 @@ async function start() {
 Событие `block` срабатывает, когда в блокчейне создается новый блок. По аналогии с предыдущим событием, при первой подписке на это событие срабатывает подписка на событие `connected`, что приводит к автоматическому подключению к блокчейну.
 
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('block', newBlock);
 
@@ -278,7 +278,7 @@ async function newBlock(obj) {
 
 Пример кода:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('account', changeAccount, 'scientistnik');
 

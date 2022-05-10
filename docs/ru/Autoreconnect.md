@@ -1,6 +1,6 @@
 ```js
-const Meta1 = require("meta1dex"),
-      {Apis} = require("Meta1js-ws");
+const Meta1 = require("meta-vision-dev"),
+      {Apis} = require("meta1-vision-ws");
 
 Apis.setRpcConnectionStatusCallback(statusCallBack)
 

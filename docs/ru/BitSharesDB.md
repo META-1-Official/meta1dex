@@ -6,7 +6,7 @@ get_objects(const vector<object_id_type> &ids)
 ```
 ### Example:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 Meta1.init(config.node);
 Meta1.subscribe('connected', start);
 

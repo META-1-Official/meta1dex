@@ -10,11 +10,11 @@ The `Meta1` class consists of static methods intended for working with the Meta1
 ### If you use `npm`
 This library can be obtained through npm:
 ```
-$ npm install meta1dex
+$ npm install meta1-vision-dex
 ```
 If you want use [REPL-mode](#repl-mode):
 ```
-$ npm install -g meta1dex
+$ npm install -g meta1-vision-dex
 ```
 
 ### If you use `browser`
@@ -28,7 +28,7 @@ After that in console aviable `Meta1` class.
 
 __meta1dex__ package contain class `Meta1`: 
 ```js
-const Meta1 = require('meta1dex')
+const Meta1 = require('meta1-vision-dex')
 ```
 To connect to the Meta1 network, you must call `connect` method:
 ```js
@@ -117,7 +117,7 @@ await acc.assetReserve("ABC", 12)
 If you want to send tokens with memo and get `acc` from `constructor` (use `new Meta1()`), then before that you need to set a private memo-key:
 ```js
 bot.setMemoKey(<privateMemoKey>)
-await bot.transfer("scientistnik", "USD", 10, "Thank you for meta1dex!")
+await bot.transfer("scientistnik", "USD", 10, "Thank you for meta1-vision-dex!")
 ```
 ### Transaction Builder
 
@@ -163,7 +163,7 @@ The account has a lot more operations available than an instance of the Meta1 cl
 
 For example:
 ```js
-let Meta1 = require("meta1dex")
+let Meta1 = require("meta1-vision-dex")
 
 Meta1.subscribe("connected", start)
 
@@ -217,7 +217,7 @@ At the moment, __meta1dex__ has three types of events:
 
 For example:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('connected', startAfterConnected);
 Meta1.subscribe('block', callEachBlock);
@@ -242,7 +242,7 @@ Another feature of the event is that when you first subscription call the method
 Now it's not necessary to explicitly call `Meta1.connect()`, it's enough to subscribe to the `connected` event.
 
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('connected', start);
 
@@ -256,7 +256,7 @@ async function start() {
 The `block` event is triggered when a new block is created in the blockchain. The first event subscription automatically creates a subscription to the `connected` event, and if this is the first subscription, it will cause a connection to the blockchain.
 
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('block', newBlock);
 
@@ -280,7 +280,7 @@ The first subscriber to `account` will call a `block` subscription, which in the
 
 Example code:
 ```js
-const Meta1 = require("meta1dex");
+const Meta1 = require("meta1-vision-dex");
 
 Meta1.subscribe('account', changeAccount, 'scientistnik');
 
@@ -292,7 +292,7 @@ In all the signed functions, an array of account history objects is transferred,
 
 ### REPL-mode
 
-If you install `meta1dex`-package in global storage, you may start `meta1dex` exec script:
+If you install `meta1-vision-dex`-package in global storage, you may start `meta1-vision-dex` exec script:
 ```js
 $ meta1dex
 >|
