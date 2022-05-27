@@ -23,6 +23,7 @@
     "@babel/runtime": "^7.1.2",
     "bignumber.js": "^7.2.1",
     "meta1-vision-js": "3.3.4-d",
+    "meta1-vision-ws": "3.1.5-d",
     "lzma": "^2.3.2"
   },
   "devDependencies": {
