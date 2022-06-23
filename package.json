@@ -1,6 +1,6 @@
 {
   "name": "meta1-vision-dex",
-  "version": "0.6.24-p",
+  "version": "0.6.25-p",
   "description": "Package for work with Meta1 DEX",
   "main": "index.js",
   "bin": {
@@ -23,7 +23,6 @@
     "@babel/runtime": "^7.1.2",
     "bignumber.js": "^7.2.1",
     "meta1-vision-js": "3.3.8-p",
-    "meta1-vision-ws": "3.1.7-p",
     "lzma": "^2.3.2"
   },
   "devDependencies": {
