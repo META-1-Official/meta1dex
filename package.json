@@ -1,6 +1,6 @@
 {
   "name": "meta1-vision-dex",
-  "version": "0.6.27-d",
+  "version": "0.7.3",
   "description": "Package for work with Meta1 DEX",
   "main": "index.js",
   "bin": {
@@ -17,12 +17,12 @@
   "keywords": [
     "meta1"
   ],
-  "author": "mindfulme",
+  "author": "Meta1 Dev Team",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "bignumber.js": "^7.2.1",
-    "meta1-vision-js": "3.3.11-d",
+    "meta1-vision-js": "3.4.2",
     "lzma": "^2.3.2"
   },
   "devDependencies": {
