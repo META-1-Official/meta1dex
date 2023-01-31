@@ -1,6 +1,6 @@
 {
   "name": "meta1-vision-dex",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Package for work with Meta1 DEX",
   "main": "index.js",
   "bin": {
@@ -18,11 +18,15 @@
     "meta1"
   ],
   "author": "Meta1 Dev Team",
+  "contributors": [
+    "Kou Zhang <kou@meta1coin.vision> (https://github.com/antmanstar)",
+    "Jin XiaoRi <jinxiaori@meta1coin.vision> (https://github.com/smartworld-dm)"
+  ],
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "bignumber.js": "^7.2.1",
-    "meta1-vision-js": "3.4.2",
+    "meta1-vision-js": "3.4.3",
     "lzma": "^2.3.2"
   },
   "devDependencies": {
