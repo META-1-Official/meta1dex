@@ -1,6 +1,6 @@
 {
   "name": "meta1-vision-dex",
-  "version": "0.7.6",
+  "version": "0.7.8",
   "description": "Package for work with Meta1 DEX",
   "main": "index.js",
   "bin": {
