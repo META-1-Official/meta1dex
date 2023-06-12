@@ -21,13 +21,13 @@
   "contributors": [
     "Kou Zhang <kou@meta1coin.vision> (https://github.com/antmanstar)",
     "Jin XiaoRi <jinxiaori@meta1coin.vision> (https://github.com/smartworld-dm)",
-    "ZhongRi < zhong@meta1coin.vision> (https://github.com/smartworld-dm)"
+    "Zhong Ri <zhong@meta1coin.vision> (https://github.com/Royalone94)"
   ],
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "bignumber.js": "^7.2.1",
-    "meta1-vision-js": "3.4.8",
+    "meta1-vision-js": "3.4.9",
     "lzma": "^2.3.2"
   },
   "devDependencies": {
